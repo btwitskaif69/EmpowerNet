@@ -11,7 +11,6 @@ import Resources from './pages/Resources';
 import Blog from './pages/Blog';
 import Contact from './pages/Contact';
 import SubmitStory from './pages/SubmitStory'; // Optional
-import EmpowerNetLanding from './components/EmpowerNetLanding';
 
 function App() {
   return (
@@ -26,8 +25,6 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/submit-story" element={<SubmitStory />} />
       </Routes>
-      <EmpowerNetLanding />;
-      <Footer />
     </BrowserRouter>
   );
 }
