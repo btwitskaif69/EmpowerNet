@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import {
-  ResizeableNavbar,
+  ResizableNavbar,
   NavBody,
   NavItems,
   MobileNav,
@@ -27,7 +27,7 @@ const Navbar = () => {
   const closeMobileMenu = () => setMobileOpen(false);
 
   return (
-    <ResizeableNavbar>
+    <ResizableNavbar>
       {/* Desktop Navbar */}
       <NavBody>
         <NavbarLogo />
@@ -58,7 +58,7 @@ const Navbar = () => {
           </NavbarButton>
         </MobileNavMenu>
       </MobileNav>
-    </ResizeableNavbar>
+    </ResizableNavbar>
   );
 };
 

@@ -6,8 +6,6 @@ import Initiative from '@/components/Initiative';
 import Testimonials from '@/components/Testimonials'; // Assuming this is the correct path
 import CTA from '@/components/CTA';
 import Newsletter from '@/components/Newsletter';
-import Footer from '@/components/Footer';
-
 
 const Home = () => {
   return <div>
@@ -17,7 +15,6 @@ const Home = () => {
     <Testimonials/>
     <CTA/>
     <Newsletter/>
-    <Footer/>
   </div>;
 };
 

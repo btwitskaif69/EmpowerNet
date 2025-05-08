@@ -11,7 +11,7 @@ import {
 import React, { useRef, useState } from "react";
 
 
-export const ResizeableNavbar = ({
+export const ResizableNavbar = ({
   children,
   className,
 }) => {

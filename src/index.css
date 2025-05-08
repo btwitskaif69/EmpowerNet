@@ -1,9 +1,11 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
+
+
 @custom-variant dark (&:is(.dark *));
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Poppins', sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
@@ -15,6 +17,8 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  
   --radius: 0.625rem;
   --background: oklch(1 0 0);
   --foreground: oklch(0.145 0 0);
@@ -150,3 +154,12 @@
 
 --animate-marquee: marquee var(--duration) infinite linear;
 --animate-marquee-vertical: marquee-vertical var(--duration) linear infinite;
+html, body {
+  position: relative; /* or 'fixed' if needed */
+  margin: 0;
+  padding: 0;
+}
+main, .container, .hero-section {
+  margin-top: 0;
+  padding-top: 0;
+}

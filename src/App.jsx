@@ -16,7 +16,6 @@ function App() {
   return (
     <BrowserRouter>
       <Navbar />
-
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
@@ -25,6 +24,7 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/submit-story" element={<SubmitStory />} />
       </Routes>
+      <Footer />
     </BrowserRouter>
   );
 }
