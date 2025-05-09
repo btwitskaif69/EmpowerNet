@@ -34,9 +34,13 @@ export const ResizableNavbar = ({
     <motion.div
       ref={ref}
       className={cn(
-        "sticky inset-x-0 top-20 z-40 w-full py-6", // Increased padding-y to `py-6`
+        "sticky inset-x-0 top-0 z-40 w-full py-4", // Increased padding-y to `py-6`
         className
       )}
+      style={{
+        // Add negative margin to compensate for any parent padding
+        marginTop: '-1px',
+      }}
     >
       {React.Children.map(children, (child) =>
         React.isValidElement(child)

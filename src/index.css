@@ -163,3 +163,12 @@ main, .container, .hero-section {
   margin-top: 0;
   padding-top: 0;
 }
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  padding-top: 0 !important;
+}
