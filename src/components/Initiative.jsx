@@ -7,7 +7,7 @@ const Initiative = () => {
         <section id="initiatives" className="display flex flex-col items-center justify-center py-20 px-4">
         <div className="container">
           <div className="max-w-3xl mx-auto text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">Our Key Initiatives</h2>
+            <h2 className="text-3xl md:text-6xl font-medium mb-2">Our Key Initiatives</h2>
             <p className="text-lg text-gray-600">
               Through targeted programs and partnerships, we're creating lasting change in communities around the world.
             </p>

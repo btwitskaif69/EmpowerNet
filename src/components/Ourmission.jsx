@@ -7,7 +7,7 @@ const Ourmission = () => {
     <section id="mission" className="py-20 bg-white">
     <div className="container">
       <div className="max-w-3xl mx-auto text-center mb-16">
-        <h2 className="text-3xl md:text-4xl font-bold mb-6">Our Mission</h2>
+        <h2 className="text-3xl md:text-6xl font-medium mb-2">Our Mission</h2>
         <p className="text-lg text-gray-600">
           EmpowerNet is dedicated to advancing Sustainable Development Goals 5 and 10 by creating programs and
           initiatives that promote gender equality and reduce inequalities worldwide.
