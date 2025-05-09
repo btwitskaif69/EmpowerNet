@@ -1,9 +1,11 @@
 import React from 'react';
 import { Twitter, Facebook, Youtube, Linkedin, Github } from 'lucide-react';
+import logo from "@/assets/logo.svg"; // update with actual relative path
+
 
 // Change this with your own data
 const footerData = {
-  brandName: 'BrandName',
+  brandName: 'EmpowerNet',
   columns: [
     {
       title: 'About Us',
@@ -76,9 +78,17 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col md:flex-row md:justify-between mb-8">
           <div className="mb-6 md:mb-0">
-            <h2 className="text-xl font-bold mb-4">{brandName}</h2>
+            <div className="flex items-center space-x-2 mb-4">
+              <img
+                src={logo}
+                alt="logo"
+                width={35}
+                height={35}
+              />
+              <h2 className="text-xl font-semibold">{brandName}</h2>
+            </div>
           </div>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-10 lg:gap-14 xl:gap-16 mb-3">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-5 lg:gap-14 xl:gap-16 mb-3">
             {columns.map((column, index) => (
               <FooterColumn key={index} title={column.title} links={column.links} />
             ))}

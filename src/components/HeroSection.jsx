@@ -41,7 +41,7 @@ const HeroSection = () => {
           Sustainable Development Goals 5 & 10
         </div>
 
-        <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight mb-6">
+        <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight leading-[1.05] md:leading-[1.1] lg:leading-[1.1] mb-6">
           <span className="block">Empowering</span>
           <span className="bg-gradient-to-r from-purple-600 to-orange-600 bg-clip-text text-transparent">
             Equality & Inclusion
@@ -49,7 +49,7 @@ const HeroSection = () => {
           <span className="block">For Everyone</span>
         </h1>
 
-        <p className="text-xl md:text-2xl text-gray-600 max-w-2xl mx-auto mb-10">
+        <p className="text-md md:text-2xl text-gray-600 max-w-2xl mx-auto mb-10">
           Building a world where everyone has equal opportunities and rights, regardless of gender, race, or
           background. Join our mission to create lasting change.
         </p>

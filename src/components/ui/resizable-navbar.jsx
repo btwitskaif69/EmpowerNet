@@ -7,8 +7,9 @@ import {
   useScroll,
   useMotionValueEvent,
 } from "motion/react";
-
 import React, { useRef, useState } from "react";
+import logo from "@/assets/logo.svg"; // update with actual relative path
+
 
 
 export const ResizableNavbar = ({
@@ -63,7 +64,7 @@ export const NavBody = ({
         boxShadow: visible
           ? "0 0 24px rgba(34, 42, 53, 0.06), 0 1px 1px rgba(0, 0, 0, 0.05), 0 0 0 1px rgba(34, 42, 53, 0.04), 0 0 4px rgba(34, 42, 53, 0.08), 0 16px 68px rgba(47, 48, 55, 0.05), 0 1px 0 rgba(255, 255, 255, 0.1) inset"
           : "none",
-        width: visible ? "40%" : "100%",
+        width: visible ? "50%" : "100%",
         y: visible ? 20 : 0,
       }}
       transition={{
@@ -204,11 +205,11 @@ export const NavbarLogo = () => {
       href="#"
       className="relative z-20 mr-4 flex items-center space-x-2 px-2 py-1 text-sm font-normal text-black">
       <img
-        src="https://assets.aceternity.com/logo-dark.png"
+        src={logo}
         alt="logo"
-        width={30}
-        height={30} />
-      <span className="font-medium text-black dark:text-white">EmpowerNet</span>
+        width={35}
+        height={35} />
+      <span className="font-semibold text-xl text-black dark:text-white">EmpowerNet</span>
     </a>)
   );
 };
@@ -222,7 +223,7 @@ export const NavbarButton = ({
   ...props
 }) => {
   const baseStyles =
-    "px-4 py-2 rounded-md bg-white button bg-white text-black text-sm font-bold relative cursor-pointer hover:-translate-y-0.5 transition duration-200 inline-block text-center";
+    "px-4 py-2 rounded-full bg-white button bg-white text-sm font-bold relative cursor-pointer hover:-translate-y-0.5 transition duration-200 inline-block text-center bg-gradient-to-r from-purple-600 to-orange-600 bg-clip-text text-transparent";
 
   const variantStyles = {
     primary:

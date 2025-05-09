@@ -3,7 +3,7 @@ import {CheckCircle, Users, Globe } from "lucide-react"
 
 const Ourmission = () => {
   return (
-    <div className="display flex flex-col items-center justify-center">
+    <div className="display flex flex-col items-center justify-center px-4">
     <section id="mission" className="py-20 bg-white">
     <div className="container">
       <div className="max-w-3xl mx-auto text-center mb-16">

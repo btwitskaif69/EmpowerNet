@@ -4,7 +4,7 @@ import { ArrowRight } from 'lucide-react'; // Assuming you have lucide-react ins
 const Initiative = () => {
   return (
     <div className=''>
-        <section id="initiatives" className="display flex flex-col items-center justify-center py-20">
+        <section id="initiatives" className="display flex flex-col items-center justify-center py-20 px-4">
         <div className="container">
           <div className="max-w-3xl mx-auto text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-6">Our Key Initiatives</h2>
@@ -18,26 +18,26 @@ const Initiative = () => {
                 title: "Women in Leadership",
                 description:
                   "Mentorship and training programs to increase women's representation in leadership positions across all sectors.",
-                image: "/placeholder.svg?height=400&width=600",
+                image: "https://images.unsplash.com/photo-1590650153855-d9e808231d41?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
               },
               {
                 title: "Equal Access Education",
                 description:
                   "Ensuring quality education is accessible to all, regardless of socioeconomic background or geographic location.",
-                image: "/placeholder.svg?height=400&width=600",
+                image: "https://images.unsplash.com/photo-1551241681-2aae145af5df?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
               },
               {
                 title: "Economic Empowerment",
                 description:
                   "Microfinance, skills training, and entrepreneurship support for marginalized communities.",
-                image: "/placeholder.svg?height=400&width=600",
+                image: "https://images.unsplash.com/photo-1741437137483-eebede95a144?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
               },
             ].map((initiative, i) => (
               <div key={i} className="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
                 <img
                   src={initiative.image || "/placeholder.svg"}
                   alt={initiative.title}
-                  className="w-full h-48 object-cover"
+                  className="w-full h-70 object-cover"
                 />
                 <div className="p-6">
                   <h3 className="text-xl font-bold mb-3">{initiative.title}</h3>

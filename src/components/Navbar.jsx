@@ -15,8 +15,9 @@ import {
 
 const navItems = [
   { name: "Home", link: "/" },
-  { name: "Features", link: "#features" },
-  { name: "Pricing", link: "#pricing" },
+  { name: "Leadership", link: "#leadership" },
+  { name: "Education", link: "#education" },
+  { name: "Empowerment", link: "#empowerment" },
   { name: "About", link: "#about" },
 ];
 
@@ -32,7 +33,7 @@ const Navbar = () => {
       <NavBody>
         <NavbarLogo />
         <NavItems items={navItems} onItemClick={closeMobileMenu} />
-        <NavbarButton href="#get-started">Get Started</NavbarButton>
+        <NavbarButton href="#join-us">Join Us</NavbarButton>
       </NavBody>
 
       {/* Mobile Navbar */}
@@ -53,8 +54,8 @@ const Navbar = () => {
               {item.name}
             </a>
           ))}
-          <NavbarButton href="#get-started" className="mt-4 w-full text-center">
-            Get Started
+          <NavbarButton href="#join-us" className="w-full mt-4">
+            Join Us
           </NavbarButton>
         </MobileNavMenu>
       </MobileNav>

@@ -63,7 +63,7 @@ const ReviewCard = ({ img, name, username, body }) => {
 
 export function Testimonials() {
   return (
-    <div className="relative flex w-full flex-col items-center justify-center overflow-hidden">
+    <div className="relative flex w-full flex-col items-center justify-center overflow-hidden px-4">
         <div className="text-center mb-10">
             <h1 className="text-black font-medium text-3xl md:text-4xl mb-6">Success Stories</h1>
             <p className="text-lg">Hear from individuals whose lives have been transformed through our programs.</p>

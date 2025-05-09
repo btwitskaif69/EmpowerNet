@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button"
 
 const Newsletter = () => {
   return (
-    <div className='display flex flex-col items-center justify-center'>
+    <div className='display flex flex-col items-center justify-center px-4'>
         <section className="py-16 bg-white ">
         <div className="container">
           <div className="max-w-xl mx-auto">
