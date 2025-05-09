@@ -8,7 +8,7 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 import {
   Users,
   Heart,
-  Globe,
+  Earth,
   Award,
   BookOpen,
   Target,
@@ -22,7 +22,8 @@ import {
 } from "lucide-react"
 import AboutHero from "@/components/About-Hero"
 import CTA from "@/components/CTA"
-import { World } from "@/components/ui/globe"
+import { Globe } from "@/components/magicui/globe";
+import logo from "@/assets/logo.svg" // update with actual relative path
 
 export default function AboutPage() {
   const [activeTab, setActiveTab] = useState("mission")
@@ -75,7 +76,7 @@ export default function AboutPage() {
               <div className="bg-white rounded-xl p-8 ">
                 <div className="flex items-center justify-center mb-6">
                   <div className="w-16 h-16 rounded-full bg-orange-100 flex items-center justify-center">
-                    <Globe className="h-8 w-8 text-orange-600" />
+                    <Earth className="h-8 w-8 text-orange-600" />
                   </div>
                 </div>
                 <h2 className="text-3xl font-bold text-center mb-6">Our Vision</h2>
@@ -186,7 +187,7 @@ export default function AboutPage() {
                   title: "Global Expansion",
                   description:
                     "Expanded operations to 20+ countries and formed strategic partnerships with international organizations and governments.",
-                  icon: <Globe className="h-6 w-6" />,
+                  icon: <Earth className="h-6 w-6" />,
                   color: "bg-green-100 text-green-600",
                 },
                 {
@@ -258,7 +259,7 @@ export default function AboutPage() {
                     {
                       title: "Women's Leadership",
                       content:
-                        "We provide training, mentorship, and networking opportunities to help women develop leadership skills and advance in decision-making positions across sectors.",
+                        "We provide training, mentorship, and Networking opportunities to help women develop leadership skills and advance in decision-making positions across sectors.",
                     },
                     {
                       title: "Economic Empowerment",
@@ -411,7 +412,7 @@ export default function AboutPage() {
             <div className="relative rounded-xl overflow-hidden h-[400px] mb-8">
               {/* This would be replaced with an actual interactive map component */}
               <div className="absolute inset-0 bg-gray-200 flex items-center justify-center">
-                <World/>
+              <Globe />
               </div>
             </div>
 
@@ -473,8 +474,11 @@ export default function AboutPage() {
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-12">
               {Array.from({ length: 8 }).map((_, i) => (
                 <div key={i} className="bg-white rounded-lg p-4 h-24 flex items-center justify-center shadow-sm">
-                  <div className="w-full h-full bg-gray-200 flex items-center justify-center rounded">
-                    <p className="text-gray-500 text-sm">Partner Logo</p>
+                  <div className="w-full h-full flex items-center justify-center rounded">
+                    <img src={logo} 
+                    alt=""
+                    width={40}
+                    height={40} />
                   </div>
                 </div>
               ))}
