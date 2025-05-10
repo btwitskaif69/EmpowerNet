@@ -28,6 +28,7 @@ import {
   CheckCircle,
   PenTool,
 } from "lucide-react"
+import CTA from "./CTA"
 
 export default function EconomicEmpowermentPage() {
   const [activeTab, setActiveTab] = useState("overview")
@@ -35,9 +36,9 @@ export default function EconomicEmpowermentPage() {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
-      <section className="relative py-20 md:py-28 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-purple-50 to-orange-50"></div>
-        <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-purple-300 to-transparent"></div>
+      <section className="relative py-20 md:py-28 overflow-hidden display flex items-center justify-center">
+        <div className="absolute inset-0"></div>
+        <div className="absolute top-0 left-0 right-0 h-px"></div>
         <div className="container relative z-10">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
@@ -65,7 +66,7 @@ export default function EconomicEmpowermentPage() {
               <div className="absolute -inset-0.5 rounded-xl bg-gradient-to-r from-purple-600 to-orange-500 opacity-30 blur"></div>
               <div className="relative rounded-xl overflow-hidden">
                 <img
-                  src="/placeholder.svg?height=600&width=800"
+                  src="https://images.unsplash.com/photo-1741437137483-eebede95a144?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                   alt="Entrepreneurs from marginalized communities working on their businesses"
                   width={800}
                   height={600}
@@ -78,7 +79,7 @@ export default function EconomicEmpowermentPage() {
       </section>
 
       {/* Key Stats */}
-      <section className="py-12 bg-white">
+      <section className="py-12 bg-white display flex items-center justify-center">
         <div className="container">
           <div className="max-w-5xl mx-auto">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
@@ -102,7 +103,7 @@ export default function EconomicEmpowermentPage() {
       </section>
 
       {/* Program Content Tabs */}
-      <section className="py-16 bg-gray-50">
+      <section className="py-16 bg-gray-50 display flex items-center justify-center">
         <div className="container">
           <Tabs defaultValue="overview" className="max-w-5xl mx-auto" onValueChange={setActiveTab}>
             <div className="flex justify-center mb-12">
@@ -746,7 +747,7 @@ export default function EconomicEmpowermentPage() {
                         business: "Sustainable Agriculture",
                         quote:
                           "With the microloan and agricultural training from EmpowerNet, I expanded my farm from 1 to 5 acres and now supply vegetables to hotels in the city. My income has tripled, and I've hired four women from my village to help with the business.",
-                        image: "/placeholder.svg?height=200&width=200",
+                        image: "https://images.unsplash.com/photo-1560950336-4b960366436a?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
                       },
                       {
                         name: "Carlos Mendez",
@@ -754,7 +755,7 @@ export default function EconomicEmpowermentPage() {
                         business: "Mobile Phone Repair",
                         quote:
                           "The technical training and business mentorship changed my life. I started with a small repair kiosk and now own a shop with three locations. We also offer digital skills training to youth in our community, passing on what I learned.",
-                        image: "/placeholder.svg?height=200&width=200",
+                        image: "https://images.unsplash.com/photo-1642115009616-c94fca8cf038?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
                       },
                     ].map((story, i) => (
                       <div key={i} className="bg-gray-50 p-6 rounded-xl">
@@ -764,7 +765,7 @@ export default function EconomicEmpowermentPage() {
                             alt={story.name}
                             width={80}
                             height={80}
-                            className="rounded-full object-cover"
+                            className="rounded-full object-cover h-20 w-20"
                           />
                           <div>
                             <h4 className="font-bold text-lg">{story.name}</h4>
@@ -789,7 +790,7 @@ export default function EconomicEmpowermentPage() {
       </section>
 
       {/* Partner With Us */}
-      <section className="py-16 bg-gradient-to-r from-purple-600 to-orange-500 text-white">
+      <section className="py-16 bg-gradient-to-r from-purple-600 to-orange-500 text-white display flex items-center justify-center">
         <div className="container">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">
@@ -843,7 +844,7 @@ export default function EconomicEmpowermentPage() {
       </section>
 
       {/* Upcoming Events */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-white display flex items-center justify-center">
         <div className="container">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">
@@ -907,7 +908,7 @@ export default function EconomicEmpowermentPage() {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-16 bg-gray-50">
+      <section className="py-16 bg-gray-50 display flex items-center justify-center">
         <div className="container">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">
@@ -963,7 +964,7 @@ export default function EconomicEmpowermentPage() {
       </section>
 
       {/* Application Process */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-white display flex items-center justify-center">
         <div className="container">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">
@@ -1056,32 +1057,7 @@ export default function EconomicEmpowermentPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-gray-50">
-        <div className="container">
-          <div className="max-w-4xl mx-auto bg-gradient-to-r from-purple-600 to-orange-500 text-white p-12 rounded-xl">
-            <div className="text-center">
-              <h2 className="text-3xl md:text-4xl font-bold mb-6">
-                Empowering Communities Through Economic Opportunity
-              </h2>
-              <p className="text-xl opacity-90 mb-8 max-w-2xl mx-auto">
-                Join us in creating pathways to financial independence and sustainable livelihoods for marginalized
-                communities worldwide.
-              </p>
-              <div className="flex flex-wrap justify-center gap-4">
-                <Button className="bg-white text-purple-600 hover:bg-gray-100 text-lg px-8 py-6">
-                  Apply for Support
-                </Button>
-                <Button variant="outline" className="border-white text-white hover:bg-white/10 text-lg px-8 py-6">
-                  Partner With Us
-                </Button>
-                <Button variant="outline" className="border-white text-white hover:bg-white/10 text-lg px-8 py-6">
-                  Donate Now
-                </Button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+            <CTA/>
     </div>
   )
 }

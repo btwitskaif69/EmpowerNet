@@ -744,7 +744,7 @@ export default function EqualAccessEducationPage() {
                         program: "Scholarship Program & Digital Learning",
                         quote:
                           "Before EmpowerNet came to our village, I had to walk 2 hours to school and often couldn't attend during rainy season. Now, with the scholarship and digital learning center in our community, I've not only completed high school but am the first in my family to attend university.",
-                        image: "/placeholder.svg?height=200&width=200",
+                        image: "https://images.unsplash.com/photo-1634254051768-003064ebf22d?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
                       },
                       {
                         name: "Kwame Osei",
@@ -752,7 +752,7 @@ export default function EqualAccessEducationPage() {
                         program: "Rural Education Access Program",
                         quote:
                           "The mobile learning program transformed our community. As a teacher, I now have resources and training to provide quality education. Our students' test scores have improved dramatically, and last year, five of our graduates received university scholarships.",
-                        image: "/placeholder.svg?height=200&width=200",
+                        image: "https://images.unsplash.com/photo-1726276262267-ebb01cfa0982?q=80&w=1931&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
                       },
                     ].map((story, i) => (
                       <div key={i} className="bg-gray-50 p-6 rounded-xl">
@@ -762,7 +762,7 @@ export default function EqualAccessEducationPage() {
                             alt={story.name}
                             width={80}
                             height={80}
-                            className="rounded-full object-cover"
+                            className="rounded-full object-cover h-20 w-20"
                           />
                           <div>
                             <h4 className="font-bold text-lg">{story.name}</h4>
