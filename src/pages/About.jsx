@@ -514,7 +514,7 @@ export default function AboutPage() {
                   name: "Maria Rodriguez",
                   location: "Colombia",
                   program: "Women's Leadership Program",
-                  image: "/placeholder.svg?height=200&width=200",
+                  image: "https://images.unsplash.com/photo-1617336995982-be3cad51764e?q=80&w=1933&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
                 },
                 {
                   quote:
@@ -522,7 +522,7 @@ export default function AboutPage() {
                   name: "Aisha Nkosi",
                   location: "Kenya",
                   program: "Education Access Initiative",
-                  image: "/placeholder.svg?height=200&width=200",
+                  image: "https://images.unsplash.com/photo-1623362004345-ec72ea0144be?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
                 },
                 {
                   quote:
@@ -530,7 +530,7 @@ export default function AboutPage() {
                   name: "Raj Patel",
                   location: "India",
                   program: "Digital Inclusion Project",
-                  image: "/placeholder.svg?height=200&width=200",
+                  image: "https://images.unsplash.com/photo-1732829094586-9bababf411a1?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
                 },
                 {
                   quote:
@@ -538,7 +538,7 @@ export default function AboutPage() {
                   name: "James Okafor",
                   location: "Nigeria",
                   program: "Inclusive Governance Initiative",
-                  image: "/placeholder.svg?height=200&width=200",
+                  image: "https://images.unsplash.com/photo-1723221907119-397c26c8f580?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
                 },
               ].map((testimonial, i) => (
                 <div key={i} className="bg-gray-50 p-8 rounded-xl">
