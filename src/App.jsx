@@ -10,8 +10,10 @@ import About from './pages/About';
 import Resources from './pages/Resources';
 import Blog from './pages/Blog';
 import Contact from './pages/Contact';
-import SubmitStory from './pages/SubmitStory'; // Optional
-import Leadership from './components/Leadership'; // Optional
+import SubmitStory from './pages/SubmitStory';
+import Leadership from './components/Leadership';
+import Education from './components/Education'; 
+import Empowerment from './components/Empowerment'; 
 
 function App() {
   return (
@@ -20,6 +22,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/leadership" element={<Leadership />} />
+        <Route path="/education" element={<Education />} />
+        <Route path="/empowerment" element={<Empowerment />} /> 
         <Route path="/about" element={<About />} />
         <Route path="/resources" element={<Resources />} />
         <Route path="/blog" element={<Blog />} />

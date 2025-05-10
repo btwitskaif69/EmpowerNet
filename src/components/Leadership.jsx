@@ -606,28 +606,28 @@ export default function WomenLeadershipPage() {
                         name: "Dr. Sarah Chen",
                         role: "CEO, Global Health Innovations",
                         bio: "20+ years of leadership in healthcare and technology sectors. Passionate about developing women leaders in STEM fields.",
-                        image: "/placeholder.svg?height=300&width=300",
+                        image: "https://images.unsplash.com/photo-1565019011521-b0575cbb57c8?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
                       },
                       {
                         name: "Maria Rodriguez",
                         role: "Regional Director, World Bank",
                         bio: "Expert in economic development with experience across Latin America. Mentors women in finance and international development.",
-                        image: "/placeholder.svg?height=300&width=300",
+                        image: "https://images.unsplash.com/photo-1663952305966-89969706f54e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
                       },
                       {
                         name: "Amina Osei",
                         role: "Founder & Executive Director, Tech4All",
                         bio: "Serial entrepreneur who has built three successful tech companies. Advocates for women's leadership in entrepreneurship.",
-                        image: "/placeholder.svg?height=300&width=300",
+                        image: "https://images.unsplash.com/photo-1680920092274-0a8e239062d8?q=80&w=2020&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
                       },
                     ].map((mentor, i) => (
-                      <Card key={i}>
-                        <div className="aspect-square relative">
+                      <Card key={i} className='py-0'>
+                        <div className="aspect-square relative  ">
                           <img
                             src={mentor.image || "/placeholder.svg"}
                             alt={mentor.name}
-                            style={{ width: "100%", height: "100%", objectFit: "cover", borderRadius: "inherit" }}
-                          />
+                            style={{objectFit: "cover",}}
+                           className="w-80 h-90 rounded-t-xl"/>
                         </div>
                         <CardContent className="p-4">
                           <h4 className="font-bold text-lg">{mentor.name}</h4>
@@ -781,7 +781,7 @@ export default function WomenLeadershipPage() {
                         previous: "Previously: Senior Developer",
                         quote:
                           "The Women in Leadership program gave me the confidence and skills to pursue a C-suite position. The mentorship was transformative, and the network I built continues to support my career growth.",
-                        image: "/placeholder.svg?height=200&width=200",
+                        image: "https://images.unsplash.com/photo-1709207512508-ba04b729e24f?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
                       },
                       {
                         name: "Fatima Nkosi",
@@ -789,7 +789,7 @@ export default function WomenLeadershipPage() {
                         previous: "Previously: Program Manager",
                         quote:
                           "Through the program, I learned to navigate complex organizational politics and advocate effectively for my ideas. Within a year of graduating, I was promoted to lead our country office.",
-                        image: "/placeholder.svg?height=200&width=200",
+                        image: "https://images.unsplash.com/photo-1672651742267-0c1a176fedd8?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
                       },
                     ].map((story, i) => (
                       <div key={i} className="bg-gray-50 p-6 rounded-xl">
@@ -797,9 +797,9 @@ export default function WomenLeadershipPage() {
                           <img
                             src={story.image || "/placeholder.svg"}
                             alt={story.name}
-                            width={80}
-                            height={80}
-                            className="rounded-full object-cover"
+                            width={70}
+                            height={70}
+                            className="rounded-full object-cover h-20 w-20"
                           />
                           <div>
                             <h4 className="font-bold text-lg">{story.name}</h4>

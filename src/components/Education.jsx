@@ -1,7 +1,6 @@
 "use client"
 
 import { useState } from "react"
-import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
@@ -30,6 +29,7 @@ import {
   Languages,
   Smartphone,
 } from "lucide-react"
+import CTA from "./CTA"
 
 export default function EqualAccessEducationPage() {
   const [activeTab, setActiveTab] = useState("overview")
@@ -37,9 +37,9 @@ export default function EqualAccessEducationPage() {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
-      <section className="relative py-20 md:py-28 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-purple-50 to-orange-50"></div>
-        <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-purple-300 to-transparent"></div>
+      <section className="relative py-20 md:py-28 overflow-hidden display flex items-center justify-center">
+        <div className="absolute inset-0 0"></div>
+        <div className="absolute top-0 left-0 right-0 h-px "></div>
         <div className="container relative z-10">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
@@ -66,8 +66,8 @@ export default function EqualAccessEducationPage() {
             <div className="relative">
               <div className="absolute -inset-0.5 rounded-xl bg-gradient-to-r from-purple-600 to-orange-500 opacity-30 blur"></div>
               <div className="relative rounded-xl overflow-hidden">
-                <Image
-                  src="/placeholder.svg?height=600&width=800"
+                <img
+                  src="https://images.unsplash.com/photo-1551241681-2aae145af5df?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                   alt="Students from diverse backgrounds learning together"
                   width={800}
                   height={600}
@@ -80,7 +80,7 @@ export default function EqualAccessEducationPage() {
       </section>
 
       {/* Key Stats */}
-      <section className="py-12 bg-white">
+      <section className="py-12 bg-white display flex items-center justify-center">
         <div className="container">
           <div className="max-w-5xl mx-auto">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
@@ -104,7 +104,7 @@ export default function EqualAccessEducationPage() {
       </section>
 
       {/* Program Content Tabs */}
-      <section className="py-16 bg-gray-50">
+      <section className="py-16 bg-gray-50 display flex items-center justify-center">
         <div className="container">
           <Tabs defaultValue="overview" className="max-w-5xl mx-auto" onValueChange={setActiveTab}>
             <div className="flex justify-center mb-12">
@@ -757,7 +757,7 @@ export default function EqualAccessEducationPage() {
                     ].map((story, i) => (
                       <div key={i} className="bg-gray-50 p-6 rounded-xl">
                         <div className="flex items-start gap-4">
-                          <Image
+                          <img
                             src={story.image || "/placeholder.svg"}
                             alt={story.name}
                             width={80}
@@ -787,7 +787,7 @@ export default function EqualAccessEducationPage() {
       </section>
 
       {/* Partner With Us */}
-      <section className="py-16 bg-gradient-to-r from-purple-600 to-orange-500 text-white">
+      <section className="py-16 bg-gradient-to-r from-purple-600 to-orange-500 text-white display flex items-center justify-center">
         <div className="container">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">
@@ -840,7 +840,7 @@ export default function EqualAccessEducationPage() {
       </section>
 
       {/* Upcoming Projects */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-white display flex items-center justify-center">
         <div className="container">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">
@@ -905,7 +905,7 @@ export default function EqualAccessEducationPage() {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-16 bg-gray-50">
+      <section className="py-16 bg-gray-50 display flex items-center justify-center">
         <div className="container">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">
@@ -961,25 +961,7 @@ export default function EqualAccessEducationPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-white">
-        <div className="container">
-          <div className="max-w-4xl mx-auto bg-gradient-to-r from-purple-600 to-orange-500 text-white p-12 rounded-xl">
-            <div className="text-center">
-              <h2 className="text-3xl md:text-4xl font-bold mb-6">Help Us Create Equal Educational Opportunities</h2>
-              <p className="text-xl opacity-90 mb-8 max-w-2xl mx-auto">
-                Your support can help break down barriers to education and transform lives through the power of
-                learning.
-              </p>
-              <div className="flex flex-wrap justify-center gap-4">
-                <Button className="bg-white text-purple-600 hover:bg-gray-100 text-lg px-8 py-6">Donate Now</Button>
-                <Button variant="outline" className="border-white text-white hover:bg-white/10 text-lg px-8 py-6">
-                  Get Involved
-                </Button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+                <CTA/>
     </div>
   )
 }
