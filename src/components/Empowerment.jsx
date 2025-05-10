@@ -36,7 +36,7 @@ export default function EconomicEmpowermentPage() {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
-      <section className="relative py-20 md:py-28 overflow-hidden display flex items-center justify-center">
+      <section className="relative py-20 md:py-28 overflow-hidden display flex items-center justify-center px-4">
         <div className="absolute inset-0"></div>
         <div className="absolute top-0 left-0 right-0 h-px"></div>
         <div className="container relative z-10">
@@ -79,7 +79,7 @@ export default function EconomicEmpowermentPage() {
       </section>
 
       {/* Key Stats */}
-      <section className="py-12 bg-white display flex items-center justify-center">
+      <section className="py-12 bg-white display flex items-center justify-center px-4">
         <div className="container">
           <div className="max-w-5xl mx-auto">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
@@ -90,7 +90,7 @@ export default function EconomicEmpowermentPage() {
                 { number: "40+", label: "Countries", icon: <Globe className="h-6 w-6" /> },
               ].map((stat, i) => (
                 <div key={i} className="text-center">
-                  <div className="w-12 h-12 rounded-full bg-purple-100 flex items-center justify-center mx-auto mb-4">
+                  <div className="w-12 h-12 rounded-full bg-purple-100 flex items-center justify-center px-4 mx-auto mb-4">
                     <div className="text-purple-600">{stat.icon}</div>
                   </div>
                   <div className="text-3xl md:text-4xl font-bold mb-2">{stat.number}</div>
@@ -103,10 +103,10 @@ export default function EconomicEmpowermentPage() {
       </section>
 
       {/* Program Content Tabs */}
-      <section className="py-16 bg-gray-50 display flex items-center justify-center">
+      <section className="py-16 bg-gray-50 display flex items-center justify-center px-4">
         <div className="container">
           <Tabs defaultValue="overview" className="max-w-5xl mx-auto" onValueChange={setActiveTab}>
-            <div className="flex justify-center mb-12">
+            <div className="flex justify-center px-4 mb-12">
               <TabsList className="grid grid-cols-2 md:grid-cols-4 w-full max-w-2xl">
                 <TabsTrigger value="overview" className="text-sm md:text-base">
                   Overview
@@ -164,7 +164,7 @@ export default function EconomicEmpowermentPage() {
                     <h3 className="text-xl font-bold mb-4">Our Three Pillars</h3>
                     <div className="space-y-6">
                       <div className="flex gap-4">
-                        <div className="w-12 h-12 rounded-full bg-purple-100 flex items-center justify-center flex-shrink-0">
+                        <div className="w-12 h-12 rounded-full bg-purple-100 flex items-center justify-center px-4 flex-shrink-0">
                           <CreditCard className="h-6 w-6 text-purple-600" />
                         </div>
                         <div>
@@ -176,7 +176,7 @@ export default function EconomicEmpowermentPage() {
                         </div>
                       </div>
                       <div className="flex gap-4">
-                        <div className="w-12 h-12 rounded-full bg-orange-100 flex items-center justify-center flex-shrink-0">
+                        <div className="w-12 h-12 rounded-full bg-orange-100 flex items-center justify-center px-4 flex-shrink-0">
                           <PenTool className="h-6 w-6 text-orange-600" />
                         </div>
                         <div>
@@ -188,7 +188,7 @@ export default function EconomicEmpowermentPage() {
                         </div>
                       </div>
                       <div className="flex gap-4">
-                        <div className="w-12 h-12 rounded-full bg-pink-100 flex items-center justify-center flex-shrink-0">
+                        <div className="w-12 h-12 rounded-full bg-pink-100 flex items-center justify-center px-4 flex-shrink-0">
                           <Lightbulb className="h-6 w-6 text-pink-600" />
                         </div>
                         <div>
@@ -790,7 +790,7 @@ export default function EconomicEmpowermentPage() {
       </section>
 
       {/* Partner With Us */}
-      <section className="py-16 bg-gradient-to-r from-purple-600 to-orange-500 text-white display flex items-center justify-center">
+      <section className="py-16 bg-gradient-to-r from-purple-600 to-orange-500 text-white display flex items-center justify-center px-4">
         <div className="container">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">
@@ -826,8 +826,8 @@ export default function EconomicEmpowermentPage() {
                 },
               ].map((option, i) => (
                 <div key={i} className="bg-white/10 backdrop-blur-sm p-6 rounded-xl">
-                  <div className="flex items-center justify-center mb-4">
-                    <div className="w-16 h-16 rounded-full bg-white/20 flex items-center justify-center">
+                  <div className="flex items-center justify-center px-4 mb-4">
+                    <div className="w-16 h-16 rounded-full bg-white/20 flex items-center justify-center px-4">
                       {option.icon}
                     </div>
                   </div>
@@ -844,7 +844,7 @@ export default function EconomicEmpowermentPage() {
       </section>
 
       {/* Upcoming Events */}
-      <section className="py-16 bg-white display flex items-center justify-center">
+      <section className="py-16 bg-white display flex items-center justify-center px-4">
         <div className="container">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">
@@ -908,7 +908,7 @@ export default function EconomicEmpowermentPage() {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-16 bg-gray-50 display flex items-center justify-center">
+      <section className="py-16 bg-gray-50 display flex items-center justify-center px-4">
         <div className="container">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">
@@ -964,7 +964,7 @@ export default function EconomicEmpowermentPage() {
       </section>
 
       {/* Application Process */}
-      <section className="py-16 bg-white display flex items-center justify-center">
+      <section className="py-16 bg-white display flex items-center justify-center px-4">
         <div className="container">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">
@@ -1031,10 +1031,10 @@ export default function EconomicEmpowermentPage() {
                   <div className="absolute left-1/2 transform -translate-x-1/2 w-6 h-6 rounded-full bg-white border-4 border-purple-500"></div>
 
                   {/* Content card */}
-                  <div className={`w-5/12 ${i % 2 === 0 ? "pr-8 text-right" : "pl-8 text-left"}`}>
+                  <div className={`w-5/12 ${i % 2 === 0 ? " text-right" : " text-left"}`}>
                     <div className="bg-white p-6 rounded-xl shadow-md border border-gray-100">
                       <div className="flex items-center gap-2 mb-2 text-lg font-bold">
-                        <div className={`inline-flex items-center justify-center p-2 rounded-full ${step.color}`}>
+                        <div className={`inline-flex items-center justify-center px-4 p-2 rounded-full ${step.color}`}>
                           {step.icon}
                         </div>
                         <span>Step {i + 1}</span>

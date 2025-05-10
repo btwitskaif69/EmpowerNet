@@ -14,6 +14,8 @@ import SubmitStory from './pages/SubmitStory';
 import Leadership from './components/Leadership';
 import Education from './components/Education'; 
 import Empowerment from './components/Empowerment'; 
+import Signup from './components/Signup';
+import Login from './components/Login';
 
 function App() {
   return (
@@ -24,6 +26,8 @@ function App() {
         <Route path="/leadership" element={<Leadership />} />
         <Route path="/education" element={<Education />} />
         <Route path="/empowerment" element={<Empowerment />} /> 
+        <Route path="/signup" element={<Signup />} />
+        <Route path="/login" element={<Login />} />
         <Route path="/about" element={<About />} />
         <Route path="/resources" element={<Resources />} />
         <Route path="/blog" element={<Blog />} />

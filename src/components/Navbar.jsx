@@ -33,7 +33,7 @@ const Navbar = () => {
       <NavBody>
         <NavbarLogo />
         <NavItems items={navItems} onItemClick={closeMobileMenu} />
-        <NavbarButton href="#join-us">Join Us</NavbarButton>
+        <NavbarButton href="/signup">Sign Up</NavbarButton>
       </NavBody>
 
       {/* Mobile Navbar */}
@@ -54,7 +54,7 @@ const Navbar = () => {
               {item.name}
             </a>
           ))}
-          <NavbarButton href="#join-us" className="w-full mt-4">
+          <NavbarButton href="/signup" className="w-full mt-4">
             Join Us
           </NavbarButton>
         </MobileNavMenu>

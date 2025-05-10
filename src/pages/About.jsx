@@ -209,7 +209,7 @@ export default function AboutPage() {
               ].map((event, i) => (
                 <div
                   key={i}
-                  className={`relative flex items-center mb-12 ${i % 2 === 0 ? "justify-start" : "justify-end"}`}
+                  className={`relative flex items-center mb-12  ${i % 2 === 0 ? "justify-start" : "justify-end"}`}
                 >
                   {/* Timeline dot */}
                   <div className="absolute left-1/2 transform -translate-x-1/2 w-6 h-6 rounded-full bg-white border-4 border-purple-500"></div>

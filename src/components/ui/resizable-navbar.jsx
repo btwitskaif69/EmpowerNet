@@ -73,7 +73,7 @@ export const NavBody = ({
         damping: 50,
       }}
       style={{
-        minWidth: "800px",
+        minWidth: "1000px",
       }}
       className={cn(
         "relative z-[60] mx-auto hidden w-full max-w-7xl flex-row items-center justify-between self-start rounded-full bg-transparent px-4 py-4 lg:flex dark:bg-transparent", // Increased padding-y to `py-4`
@@ -202,7 +202,7 @@ export const MobileNavToggle = ({
 export const NavbarLogo = () => {
   return (
     (<a
-      href="#"
+      href="/"
       className="relative z-20 mr-4 flex items-center space-x-2 px-2 py-1 text-sm font-normal text-black">
       <img
         src={logo}
